@@ -1,0 +1,13 @@
+.units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4b6048;
+    padding: 2px;
+    
+}
+.units p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+}
