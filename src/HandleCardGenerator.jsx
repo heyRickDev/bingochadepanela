@@ -1,15 +1,39 @@
+import React, { useState } from 'react';
+import { Bingo } from './Bingo'; // Adjust the import path as needed
 
-const quantityOfCardToGenerate = document.querySelector('#quantity')
-const generateButton = document.querySelector('button')
-// const result = document.querySelector('.result')
+export function HandleCardGenerator() {
+  const [generatedCards, setGeneratedCards] = useState([]);
 
-export function handleCardGenerator(event){
-  event.preventDefault()
-  // result.innerHTML = quantityOfCardToGenerate.value
-  // for (let i = 0; i <= quantityOfCardToGenerate.value; i++){
-  //   result.innerHTML += `Printed ${i} times <br>`
-  // }
-  console.log('clicked')
+  const handleCardGenerator = (event) => {
+    event.preventDefault();
+    
+    // Get the quantity from the input
+    const quantityInput = event.currentTarget.querySelector('#quantity');
+    const quantity = quantityInput ? parseInt(quantityInput.value, 10) : 0;
+
+    // Generate an array of Bingo components
+    const cards = Array.from({ length: quantity }, (index) => (
+      <Bingo key={index} />
+    ));
+
+    // Update state with generated cards
+    setGeneratedCards(cards);
+  };
+
+  return (
+    <form onSubmit={handleCardGenerator}>
+      <div className="wrapper">
+        <label htmlFor="quantity">Quantidade</label>
+        <input 
+          type="number" 
+          id="quantity" 
+          required 
+        />
+        <button type="submit">Gerar Cartelas</button>
+      </div>
+      <div className="page">
+        {generatedCards}
+      </div>
+    </form>
+  );
 }
-
-// generateButton.addEventListener('click', handleCardGenerator)

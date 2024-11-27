@@ -16,10 +16,14 @@ header img {
   margin: 0 auto;
   padding: 2px;
   width: 450px;
-  border: 2px dashed #4b6048;
+  /* border: 2px dashed #4b6048; */
+}
+.card-wrapper {
+  margin-top: 1100px;
 }
 .box {
   /* background-color: lightgreen; */
+  position: relative;
   display: grid;
   gap: 2px;
   width: 450px;
@@ -27,38 +31,17 @@ header img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.box img {
+  position: absolute;
+  width: 20%;
+  top: 164px;
+  left: 182px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border: 2px dashed #4b6048;
+  margin: 50px 0;
 }

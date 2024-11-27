@@ -3,17 +3,13 @@ import './App.css';
 import { Cell } from './cell';
 import { Bingo } from './Bingo';
 import { Input } from './Input';
-
-
+import { HandleCardGenerator } from './HandleCardGenerator';
 
 function App() {
 
   return (
     <>
-          <Input />
-      <div className="page">
-          <Bingo />
-      </div>
+      <HandleCardGenerator />
     </>
   );
 }

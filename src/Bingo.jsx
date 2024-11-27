@@ -56,13 +56,16 @@ for (let i = shuffled.length - 1; i > 0; i--) {
 
     return (
         <>
-            <header>
-                <img src="./src/assets/bingoBg.png" alt="" />
-            </header>
-            <div className="box">
-                {cuttedList.map((item, index) => (
-                    <Cell key={index} value={item} />
-                ))}
+            <div className="card-wrapper">
+                <header>
+                    <img src="./src/assets/bingoBg.png" alt="" />
+                </header>
+                <div className="box">
+                    {cuttedList.map((item, index) => (
+                        <Cell key={index} value={item} />
+                    ))}
+                    <img src="./src/assets/pan.png" alt="" />
+                </div>
             </div>
         </>
     )
