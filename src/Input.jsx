@@ -1,5 +1,4 @@
 import { HandleCardGenerator } from './HandleCardGenerator';
-import style from'./input.module.css';
 
 export function Input(){
     return (
