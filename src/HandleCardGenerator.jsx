@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bingo } from './Bingo'; // Adjust the import path as needed
+import { Bingo } from './Bingo.jsx'; // Adjust the import path as needed
 
 export function HandleCardGenerator() {
   const [generatedCards, setGeneratedCards] = useState([]);

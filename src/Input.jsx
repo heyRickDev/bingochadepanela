@@ -1,4 +1,4 @@
-import { HandleCardGenerator } from './HandleCardGenerator';
+import { HandleCardGenerator } from './HandleCardGenerator.jsx';
 
 export function Input(){
     return (

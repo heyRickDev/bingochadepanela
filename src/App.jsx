@@ -1,5 +1,5 @@
 import './App.css';
-import { HandleCardGenerator } from './HandleCardGenerator';
+import { HandleCardGenerator } from './HandleCardGenerator.jsx';
 
 
 function App() {
