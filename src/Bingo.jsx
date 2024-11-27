@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Cell } from "./cell";
+import { Cell } from "./Cell.jsx";
 
 const listItems = [
     'Afiador de faca',
