@@ -1,7 +1,7 @@
 {
   "name": "chadepanela",
-  "homepage": "https://heyrickdev.github.io/bingochadepanela/",
-  "private": false,
+  "homepage": "https://heyrickdev.github.io/bingochadepanela",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
